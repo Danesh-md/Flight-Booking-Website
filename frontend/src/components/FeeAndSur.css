@@ -1,0 +1,38 @@
+.fareSummaryContainer {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 150px;
+  transition: box-shadow 0.3s ease;
+}
+
+.fareSummaryContainer:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.fareSummaryTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.fareItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.fareItemLabel {
+  color: #666;
+}
+
+.fareItemValue {
+  font-weight: bold;
+}

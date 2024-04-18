@@ -1,0 +1,77 @@
+.toplogo {
+  width: 130px;
+  height: auto;
+}
+.nav {
+  display: flex;
+  height: 8%;
+  width: 100%;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-inside-1 {
+  width: 25%;
+}
+.nav-inside-1 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+.nav-inside-1 ul li a {
+  color: black;
+  text-decoration: none;
+}
+.login {
+  border: 1px solid #eb4644;
+  padding: 5px 20px 5px 20px;
+  border-radius: 20px;
+  height: 40px;
+  width: 120px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #fff;
+}
+.login svg {
+  height: 5px;
+  width: auto;
+  fill: #eb4644; /* Set default color to light #EB4644 */
+  transition: fill 0.3s ease; /* Add transition effect */
+}
+
+.login:hover svg {
+  fill: white; /* Change color to white on hover */
+}
+.nav-inside-2 {
+  margin-right: 40px;
+}
+.nav-inside-2 a {
+  color: black;
+  text-decoration: none;
+}
+.nav-inside-1 ul li a:hover {
+  color: grey;
+}
+.login:hover {
+  background-color: #eb4644;
+  cursor: pointer;
+}
+.login:hover a {
+  color: white;
+  background-color: #eb4644;
+}
+.login {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.login svg {
+  height: 15px;
+  width: auto;
+}
+
+header div ul li a.active {
+  color: red;
+}

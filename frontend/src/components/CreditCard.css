@@ -1,0 +1,209 @@
+.creditContainer {
+  height: 600px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  margin-left: 35%;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: whitesmoke;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.paymentAmt {
+  display: flex;
+  flex-direction: column;
+}
+.paymentAmt label {
+  width: auto;
+  margin-bottom: 10px;
+}
+.paymentAmt input {
+  width: 94%;
+  height: 30px;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.cardNumber {
+  display: flex;
+  flex-direction: column;
+}
+.cardNumber label {
+  width: auto;
+  margin-bottom: 10px;
+}
+.cardNumber input {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.cardName {
+  display: flex;
+  flex-direction: column;
+}
+.cardName label {
+  width: auto;
+  margin-bottom: 10px;
+}
+.cardName input {
+  width: 94%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.insideCardNumber {
+  display: flex;
+}
+.input-group-append {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid gray;
+  height: 42px;
+  width: 50px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.expiry {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 200px;
+  margin-top: 20px;
+}
+.monthAndYear {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cvv {
+  display: flex;
+  flex-direction: column;
+}
+.cvv input {
+  height: 30px;
+  width: 70px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.labelNames {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.month select {
+  height: 50px;
+  width: 80px;
+  margin-right: 20px;
+}
+.year select {
+  height: 50px;
+  width: 80px;
+}
+
+.expiry label {
+  text-align: start;
+  width: 100%;
+}
+.monthAndYear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.expiry {
+  margin-bottom: 20px;
+}
+
+.monthAndYear {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.month,
+.year {
+  width: 45%;
+}
+.cvv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 20px; /* Add margin to create space between CVV and expiry */
+}
+
+.cvv label {
+  margin-bottom: 5px; /* Remove the bottom margin to reduce space */
+}
+.cvv input {
+  height: 35px;
+  border: 1px solid gray;
+}
+
+.expiry label {
+  margin-bottom: 0; /* Remove the bottom margin to reduce space */
+}
+/* Add these styles at the end of your CSS file */
+.btnSub button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: auto; /* Center the button horizontally */
+}
+
+.btnSub button:hover {
+  background-color: darkred;
+}
+.btnSub {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form2 {
+  padding: 0;
+  padding-top: 20px;
+  border: none;
+}
+.paymentAmt {
+  width: 80%;
+}
+.cardNumber {
+  width: 80%;
+  height: 15%;
+}
+.cardName {
+  width: 80%;
+}
+.cvv {
+  margin-bottom: 70px;
+  margin-left: 30px;
+}

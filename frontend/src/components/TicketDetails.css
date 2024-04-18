@@ -1,0 +1,150 @@
+.container {
+  margin-top: 50px;
+  height: 350px;
+  width: 69%;
+  background-color: #ededed;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.heading {
+  color: black;
+  height: 10%;
+}
+
+.cardWhole {
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  height: 350px;
+}
+
+.flightDetailsTicket,
+.depart,
+.timeDuration,
+.reach {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timeDuration h4 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.depart h4,
+.depart h5,
+.reach h4,
+.reach h5 {
+  margin: 4px 0;
+}
+
+.flightDetailsTicket h5,
+.depart h5,
+.reach h5 {
+  color: #777;
+}
+
+.unwanted {
+  color: #777;
+  border-top: 2px solid #ccc;
+  border-radius: 0 0 12px 12px;
+  height: 5%;
+}
+.ticketDetailsInside {
+  width: 70%;
+  padding: 10px;
+  height: 350px;
+}
+.messageRandom {
+  width: 30%;
+  background-color: #f74040;
+  border-start-end-radius: 15px;
+  border-end-end-radius: 15px;
+  padding: 10px;
+  color: white;
+}
+.titleName {
+  font-size: x-large;
+  text-align: center;
+}
+.summaImage {
+  margin-top: 20px;
+  margin-left: 90px;
+}
+.para1 {
+  text-align: center;
+  margin-top: 40px;
+}
+.para2 {
+  margin-top: 20px;
+  text-align: center;
+  width: 90%;
+}
+.detailsHeading {
+  margin-left: 30px;
+  color: #777;
+  font-size: larger;
+  font-weight: 600;
+}
+.insideDetails1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.ticketType {
+  margin-right: 40px;
+  color: #f74040;
+}
+.level1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+.level2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+.level3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+.level4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+
+h4,
+h3 {
+  margin: 0;
+}
+h4 {
+  color: gray;
+}
+.fromAirport h3 {
+  font-size: small;
+}
+.toAirport h3 {
+  font-size: small;
+}

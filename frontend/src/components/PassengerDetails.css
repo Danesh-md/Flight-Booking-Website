@@ -1,0 +1,91 @@
+.passengerDetailBox {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 20px;
+  width: 65%;
+  margin-left: 30px;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 50px;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items in a column */
+}
+
+.passengerDetailBox:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.passengerDetails {
+  margin-bottom: 0px;
+}
+
+.passengerDetails > div {
+  margin-bottom: 15px;
+  display: flex; /* Use flexbox */
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space evenly between items */
+}
+
+.passengerDetails label {
+  font-weight: bold;
+  width: auto;
+}
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+}
+.passengerDetails input[type="text"],
+.contactDetails input[type="email"],
+.contactDetails input[type="tel"],
+.passengerDetails select {
+  flex: 1; /* Distribute remaining space evenly among input boxes */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  margin: 5px;
+}
+
+.passengerDetails input[type="text"]:focus,
+.passengerDetails input[type="email"]:focus,
+.passengerDetails input[type="tel"]:focus,
+.passengerDetails select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.passengerDetails select {
+  appearance: none;
+}
+
+.btn {
+  width: 200px;
+  height: 40px;
+  padding: 8px;
+  background-color: #f74040;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background-color: darkred;
+}
+
+.error {
+  color: red;
+}
+.inside1,
+.inside2,
+.inside3,
+.inside4,
+.inside5 {
+  margin-bottom: 20px;
+}

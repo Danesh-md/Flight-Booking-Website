@@ -1,0 +1,147 @@
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Roboto"); * { margin:
+  15px; padding: 0px; box-sizing: border-box; font-family: "Roboto", sans-serif;
+  margin-top: 10px; } .flight h1 { color: #f74040; } .ticketE h1 { text-align:
+  end; } .ticketE { border-bottom: 3px solid black; } .onePara, .twoPara,
+  .threePara { font-size: xx-small; } .tb1 { display: flex; flex-direction:
+  column; width: 100%; } .table1row1, .table1row2, .table1row3, .table1row4 {
+  display: flex; margin: 0; } .tb2 { display: flex; flex-direction: column;
+  width: 100%; } .table2row1, .table2row2 { display: flex; margin: 0; } .tb3 {
+  display: flex; flex-direction: column; width: 100%; } .table3row1,
+  .table3row2, .table3row3 { display: flex; margin: 0; } .tb4 { display: flex;
+  flex-direction: column; width: 100%; } .table4row1, .table4row2, .table4row3,
+  .table4row4 { display: flex; margin: 0; } h3 { margin: 0; } .table1, .table2,
+  .table3, .table4 { margin: 0; background-color: grey; color: white; }
+  .table1row1, .table1row3, .table2row1, .table3row1, .table3row3, .table4row1,
+  .table4row3 { background-color: #f3f3f3; } .table1row2, .table1row4,
+  .table2row2, .table3row2, .table4row2 { background-color: #d7d7d7; } h5 {
+  font-weight: 700; } .b { font-weight: 900; font-size: large; } .table1row1,
+  .table1row3, .table2row1, .table3row1, .table3row3, .table4row1, .table4row3,
+  .table1row2, .table1row4, .table2row2, .table3row2, .table4row2 { display:
+  flex; justify-content: space-around; align-items: center; } .c { color:
+  #f3f3f3; }.table1row1, .table1row2, .table1row3, .table1row4, .table2row1,
+  .table2row2, .table3row1, .table3row2, .table3row3, .table4row1, .table4row2,
+  .table4row3, .table4row4 { margin: 0; }
+</style>
+
+<div class="pdf">
+  <div class="pdfHeading">
+    <div class="flight">
+      <h1>FLIGHT</h1>
+    </div>
+    <div class="ticketE">
+      <h1>E-Ticket</h1>
+    </div>
+  </div>
+  <div class="paraTicket">
+    <h5>Important Information</h5>
+    <ul>
+      <li>
+        <h6 class="onePara">
+          This is your E-Ticket Itinerary. You must bring it to the airport for
+          check-in, and it is recommended you retain a copy for your records.
+        </h6>
+      </li>
+      <li>
+        <h6 class="twoPara">
+          Each passenger traveling needs a printed copy of this document for
+          immigrations, customs, airport security checks, and duty-free
+          purchases.
+        </h6>
+      </li>
+      <li>
+        <h6 class="threePara">
+          Economy Class passengers should report to airline check-in desks 3
+          hours prior to departure of all flights. First and Business Class
+          passengers should report to airline check-in desks not later than 1
+          hour prior to departure. Boarding for your flight begins at least 35
+          minutes before your scheduled departure time. Gates close 15 minutes
+          prior to departure.
+        </h6>
+      </li>
+    </ul>
+  </div>
+  <div class="tb1">
+    <div class="table1">
+      <div class="table1Name"><h3>TICKET INFORMATION</h3></div>
+    </div>
+    <div class="table1row1">
+      <h5 class="b">TICKET REFERENCE</h5>
+      <h5>{{random}}</h5>
+      <h5 class="b">BOOKING DATE</h5>
+      <h5>{{currentDate}}</h5>
+    </div>
+    <div class="table1row2">
+      <h5 class="b">FLIGHT DATE</h5>
+      <h5>{{departureDate}}</h5>
+      <h5 class="b">CLASS</h5>
+      <h5>{{classType}}</h5>
+    </div>
+    <div class="table1row3">
+      <h5 class="b">EMAIL</h5>
+      <h5>{{email}}</h5>
+      <h5 class="b">MOBILE</h5>
+      <h5>{{countryCode}} {{phoneNumber}}</h5>
+    </div>
+    <div class="table1row4">
+      <h5 class="b">TIME</h5>
+      <h5>{{flightDetails.depart_time}}</h5>
+      <h5 class="b">STATUS</h5>
+      <h5>CONFIRMED</h5>
+    </div>
+  </div>
+  <div class="tb2">
+    <div class="table2">
+      <div class="table2Name"><h3>PASSENGER INFORMATION</h3></div>
+    </div>
+    <div class="table2row1">
+      <h5 class="b">S NO.</h5>
+      <h5 class="b">PASSENGER NAME</h5>
+      <h5 class="b">SEX</h5>
+      <h5 class="b">CLASS</h5>
+    </div>
+    <div class="table2row2">
+      <h5>1.</h5>
+      <h5>{{name}}</h5>
+      <h5>{{gender}}</h5>
+      <h5>{{classType}}</h5>
+    </div>
+  </div>
+  <div class="tb3">
+    <div class="table3">
+      <div class="table3Name"><h3>FLIGHT INFORMATION</h3></div>
+    </div>
+    <div class="table3row1">
+      <h5 class="b">FLIGHT</h5>
+      <h5 class="b">DEPART/ARRIVE</h5>
+      <h5 class="b">AIRPORT/TERMINAL</h5>
+    </div>
+    <div class="table3row2">
+      <h5>{{flightDetails.airline}} {{flightDetails.flight_no}}</h5>
+      <h5>{{departureDate}} | {{flightDetails.depart_time}}</h5>
+      <h5>{{airport1.airport}} ({{airport1.code}})</h5>
+    </div>
+    <div class="table3row3">
+      <h5 class="c">SUMMARY</h5>
+      <h5>{{departureDate}} | {{flightDetails.arrival_time}}</h5>
+      <h5>{{airport2.airport}} ({{airport2.code}})</h5>
+    </div>
+  </div>
+  <div class="tb4">
+    <div class="table4">
+      <div class="table4Name"><h3>FARE DETAILS</h3></div>
+    </div>
+    <div class="table4row1">
+      <h5 class="b">FARE</h5>
+      <h5>INR {{baseFare}}</h5>
+    </div>
+    <div class="table4row2">
+      <h5 class="b">CHARGES</h5>
+      <h5>INR 100</h5>
+    </div>
+    <div class="table4row3">
+      <h5 class="b">TOTAL</h5>
+      <h5>INR {{totalFare}}</h5>
+    </div>
+  </div>
+</div>

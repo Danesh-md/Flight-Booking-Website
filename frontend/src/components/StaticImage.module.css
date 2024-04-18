@@ -1,0 +1,59 @@
+.main-2 {
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 3%;
+  padding-bottom: 1%;
+}
+.main-2-1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.center {
+  display: grid;
+  grid-template-rows: 350px 350px;
+  grid-template-columns: 450px 450px 400px;
+  justify-content: center;
+}
+.main-2-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+}
+.img-1 img,
+.img-2 img,
+.img-3 img,
+.img-4 img,
+.img-5 img,
+.img-6 img {
+  position: absolute;
+  filter: brightness(60%);
+}
+.img-1,
+.img-2,
+.img-3,
+.img-4,
+.img-5,
+.img-6 {
+  transition: transform 0.3s ease;
+}
+
+.head2 {
+  position: relative;
+  color: white;
+  left: 10%;
+  top: 55%;
+}
+.img-1:hover,
+.img-2:hover,
+.img-3:hover,
+.img-4:hover,
+.img-5:hover,
+.img-6:hover {
+  transform: translateY(-15px);
+}
+.static{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

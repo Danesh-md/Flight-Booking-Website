@@ -1,0 +1,171 @@
+.main-1 {
+  width: 100%;
+  height: auto;
+}
+.main-1 img {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+.heading1 {
+  position: absolute;
+  top: 45%;
+  color: white;
+  left: 8%;
+  font-size: larger;
+  font-weight: 900;
+}
+
+.middle {
+  text-align: center;
+  font-size: 55px;
+  margin: 0;
+}
+.middle2 {
+  font-size: 55px;
+  margin: 0;
+}
+
+.container {
+  height: 600px;
+  width: 530px;
+  position: absolute;
+  background-color: white;
+  top: 15%;
+  left: 60%;
+  border-radius: 15px;
+}
+form {
+  position: relative;
+  width: 100%; /* Set the width to 100% to fill the container */
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  height: 600px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="radio"],
+input[type="date"],
+select,
+.submit {
+  width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.submit {
+  border-radius: 30px;
+  height: 30px;
+}
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 0px;
+  width: auto; /* Reset width */
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  width: auto; /* Reset width */
+}
+
+select {
+  width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+}
+
+.submit {
+  height: 40px;
+  background-color: #eb4644;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: crimson;
+}
+
+form div {
+  margin-bottom: 30px;
+}
+
+.radio-group {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.radio-group label {
+  margin-right: 60px;
+}
+
+label {
+  font-weight: bold;
+  width: 120px; /* Set a fixed width for labels */
+  display: inline-block; /* Ensure labels are displayed in-line */
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  width: calc(100% - 10px); /* Adjusted width for input elements */
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit {
+  width: calc(100% - 10px); /* Adjusted width for submit button */
+  height: 40px;
+  background-color: #eb4644;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit:hover {
+  background-color: crimson;
+}
+
+.one {
+  height: auto;
+  width: 100%;
+}
+
+.two {
+  height: auto;
+  width: 100%;
+}
+.three {
+  height: auto;
+  width: 100%;
+}
+.four {
+  height: auto;
+  width: 100%;
+}
+.five {
+  height: auto;
+  width: 100%;
+}

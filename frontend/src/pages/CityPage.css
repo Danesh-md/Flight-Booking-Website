@@ -1,0 +1,48 @@
+.backgroundImage {
+  position: absolute; /* Change to relative */
+  width: 100%;
+  height: auto;
+}
+
+.formCity {
+  position: absolute;
+  background-color: white;
+  height: 200px;
+  width: 60%;
+  border-radius: 10px;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 30px;
+}
+
+.backGround3 {
+  min-height: 50vh;
+  position: relative; /* Add this */
+}
+.codeButton {
+  left: 50%;
+  background-color: #eb4644;
+  border-radius: 30px;
+  border: none;
+  padding: 15px;
+  margin-top: 50px;
+  margin-left: 45%;
+}
+.answerBox {
+  position: absolute;
+  background-color: white;
+  height: 200px;
+  width: 60%;
+  border-radius: 10px;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 30px;
+}
+.answer {
+  font-size: 90px;
+  text-align: center;
+}

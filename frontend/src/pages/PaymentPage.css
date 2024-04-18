@@ -1,0 +1,13 @@
+.flexbox {
+  display: flex;
+}
+.otherOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+.payment {
+  background-color: whitesmoke;
+}
